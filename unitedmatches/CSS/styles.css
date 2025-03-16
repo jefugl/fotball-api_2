@@ -30,23 +30,23 @@ table.dataframe tr:hover {
 }
 
 table.dataframe th:nth-child(1), table.dataframe td:nth-child(1) {
-width: 50px; /* Juster bredden etter behov */
+width: 50px;
 }
 
 table.dataframe th:nth-child(2), table.dataframe td:nth-child(2) {
- width: 150px; /* Juster bredden etter behov */
+ width: 150px;
 }
 
 table.dataframe th:nth-child(3), table.dataframe td:nth-child(3) {
-width: 50px; /* Juster bredden etter behov */
+width: 50px;
 }
 
 table.dataframe th:nth-child(4), table.dataframe td:nth-child(4) {
-width: 50px; /* Juster bredden etter behov */
+width: 50px;
 }
 
 table.dataframe th:nth-child(5), table.dataframe td:nth-child(5) {
-width: 50px; /* Juster bredden etter behov */
+width: 50px;
 }
 
 h1 {
@@ -57,5 +57,5 @@ h1 {
 .container {
     display: flex;
     justify-content: flex-end;
-    margin-right: 20px; /* Juster marginen etter behov */
+    margin-right: 20px;
 }
