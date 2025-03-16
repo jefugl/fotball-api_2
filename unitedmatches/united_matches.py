@@ -39,7 +39,7 @@ def match_result():
         print(match_time)
         html_table = df.to_html(index=False, escape=False)
         env = Environment(loader=FileSystemLoader('..'))
-        template = env.get_template('unitedmatches/template.html')
+        template = env.get_template(r'unitedmatches/template.html')
         output = template.render(table=html_table)
         with open("index.html", "w") as file:
             file.write(output)
