@@ -15,7 +15,7 @@ def match_result():
         data = json.loads(file)
         pl_league = data['response']
         for i in range(len(pl_league)):
-            match_time.append(match_time_stamp(pl_league[i]['fixture']['timestamp']))
+            mtime = pl_league[i]['fixture']['timestamp']
             home_id = pl_league[i]['teams']['home']['id']
             away_id = pl_league[i]['teams']['away']['id']
             homescore = pl_league[i]['goals']['home']
@@ -27,6 +27,7 @@ def match_result():
                 away_team.append(pl_league[i]['teams']['away']['name'])
                 home_score.append(pl_league[i]['goals']['home'])
                 away_score.append(pl_league[i]['goals']['away'])
+                match_time.append(match_time_stamp(mtime))
 
         clm = ['Match date', 'Home', 'Away', 'h_score', 'a_score']
         h_score = [int(score) if score is not None else 0 for score in home_score]
@@ -35,11 +36,12 @@ def match_result():
         df = pd.DataFrame(list(zip(match_time, home_team, away_team, h_score, a_score)),
                           columns=clm)
         print(df)
+        print(match_time)
         html_table = df.to_html(index=False, escape=False)
         env = Environment(loader=FileSystemLoader('..'))
         template = env.get_template('unitedmatches/template.html')
         output = template.render(table=html_table)
-        with open("united_matches.html", "w") as file:
+        with open("index.html", "w") as file:
             file.write(output)
 
 
