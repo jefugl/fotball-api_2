@@ -1,0 +1,61 @@
+table.dataframe {
+  width: 30%;
+  border-collapse: collapse
+}
+
+table.dataframe th, table.dataframe td {
+  padding: 5px;
+  text-align: center;
+}
+
+table.dataframe td:nth-child(2) {
+  text-align: center;
+}
+
+table.dataframe th {
+  background-color: #E9EED9;
+  text-align: center;
+}
+
+table.dataframe tr:nth-child(odd) {
+  background-color: #E4E0E1;
+}
+
+table.dataframe tr:nth-child(even) {
+  background-color: #C6E7FF;
+}
+
+table.dataframe tr:hover {
+  background-color: #FBD288;
+}
+
+table.dataframe th:nth-child(1), table.dataframe td:nth-child(1) {
+width: 50px; /* Juster bredden etter behov */
+}
+
+table.dataframe th:nth-child(2), table.dataframe td:nth-child(2) {
+ width: 150px; /* Juster bredden etter behov */
+}
+
+table.dataframe th:nth-child(3), table.dataframe td:nth-child(3) {
+width: 50px; /* Juster bredden etter behov */
+}
+
+table.dataframe th:nth-child(4), table.dataframe td:nth-child(4) {
+width: 50px; /* Juster bredden etter behov */
+}
+
+table.dataframe th:nth-child(5), table.dataframe td:nth-child(5) {
+width: 50px; /* Juster bredden etter behov */
+}
+
+h1 {
+  text-align: right;
+  color: blue;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px; /* Juster marginen etter behov */
+}
