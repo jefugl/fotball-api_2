@@ -47,7 +47,7 @@ def table():
         df = pd.DataFrame(list(zip(tablepos, club_with_logo, game, goal_diff, point)), columns=clm)
         html_table = df.to_html(index=False, escape=False)
         env = Environment(loader=FileSystemLoader('..'))
-        template = env.get_template(r'pl-table/template.html')
+        template = env.get_template('pl-table/template.html')
         output = template.render(table=html_table)
         with open("index.html", "w") as file:
             file.write(output)
