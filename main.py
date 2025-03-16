@@ -29,7 +29,7 @@ def standings():
 
     res = conn.getresponse()
     data = res.read()
-    print(data)
+
     # print(data.decode("utf-8"))
     data_write = data.decode("utf-8")
 
