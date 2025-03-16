@@ -1,28 +1,2673 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotballtabeller</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <h1>Premiere League 2024/25</h1>
-    <div class="container">
-        <table border="0">
-            <tbody>
-                {{ table1 | safe }}
-            </tbody>
-        </table>
-    </div>
-
-    <h1>Champions League 2024/25</h1>
-    <div class="container">
-        <table border="0">
-            <tbody>
-                {{ table2 | safe }}
-            </tbody>
-        </table>
-    </div>
-</body>
-</html>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Match date</th>
+      <th>Home</th>
+      <th>Away</th>
+      <th>h_score</th>
+      <th>a_score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>16/08/2024 Kl:21:00</td>
+      <td>Manchester United</td>
+      <td>Fulham</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>17/08/2024 Kl:13:30</td>
+      <td>Ipswich</td>
+      <td>Liverpool</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>17/08/2024 Kl:16:00</td>
+      <td>Newcastle</td>
+      <td>Southampton</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>17/08/2024 Kl:16:00</td>
+      <td>Arsenal</td>
+      <td>Wolves</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>17/08/2024 Kl:16:00</td>
+      <td>Everton</td>
+      <td>Brighton</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>17/08/2024 Kl:16:00</td>
+      <td>Nottingham Forest</td>
+      <td>Bournemouth</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>17/08/2024 Kl:18:30</td>
+      <td>West Ham</td>
+      <td>Aston Villa</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>18/08/2024 Kl:15:00</td>
+      <td>Brentford</td>
+      <td>Crystal Palace</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>18/08/2024 Kl:17:30</td>
+      <td>Chelsea</td>
+      <td>Manchester City</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>19/08/2024 Kl:21:00</td>
+      <td>Leicester</td>
+      <td>Tottenham</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>24/08/2024 Kl:13:30</td>
+      <td>Brighton</td>
+      <td>Manchester United</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>24/08/2024 Kl:16:00</td>
+      <td>Fulham</td>
+      <td>Leicester</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>24/08/2024 Kl:16:00</td>
+      <td>Southampton</td>
+      <td>Nottingham Forest</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>24/08/2024 Kl:16:00</td>
+      <td>Tottenham</td>
+      <td>Everton</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>24/08/2024 Kl:16:00</td>
+      <td>Manchester City</td>
+      <td>Ipswich</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>24/08/2024 Kl:16:00</td>
+      <td>Crystal Palace</td>
+      <td>West Ham</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>24/08/2024 Kl:18:30</td>
+      <td>Aston Villa</td>
+      <td>Arsenal</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>25/08/2024 Kl:15:00</td>
+      <td>Bournemouth</td>
+      <td>Newcastle</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>25/08/2024 Kl:15:00</td>
+      <td>Wolves</td>
+      <td>Chelsea</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>25/08/2024 Kl:17:30</td>
+      <td>Liverpool</td>
+      <td>Brentford</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>31/08/2024 Kl:13:30</td>
+      <td>Arsenal</td>
+      <td>Brighton</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>31/08/2024 Kl:16:00</td>
+      <td>Everton</td>
+      <td>Bournemouth</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>31/08/2024 Kl:16:00</td>
+      <td>Leicester</td>
+      <td>Aston Villa</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>31/08/2024 Kl:16:00</td>
+      <td>Brentford</td>
+      <td>Southampton</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>31/08/2024 Kl:16:00</td>
+      <td>Ipswich</td>
+      <td>Fulham</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>31/08/2024 Kl:16:00</td>
+      <td>Nottingham Forest</td>
+      <td>Wolves</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>31/08/2024 Kl:18:30</td>
+      <td>West Ham</td>
+      <td>Manchester City</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>01/09/2024 Kl:14:30</td>
+      <td>Newcastle</td>
+      <td>Tottenham</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/09/2024 Kl:14:30</td>
+      <td>Chelsea</td>
+      <td>Crystal Palace</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/09/2024 Kl:17:00</td>
+      <td>Manchester United</td>
+      <td>Liverpool</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>14/09/2024 Kl:13:30</td>
+      <td>Southampton</td>
+      <td>Manchester United</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>14/09/2024 Kl:16:00</td>
+      <td>Fulham</td>
+      <td>West Ham</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>14/09/2024 Kl:16:00</td>
+      <td>Liverpool</td>
+      <td>Nottingham Forest</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>14/09/2024 Kl:16:00</td>
+      <td>Manchester City</td>
+      <td>Brentford</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>14/09/2024 Kl:16:00</td>
+      <td>Brighton</td>
+      <td>Ipswich</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14/09/2024 Kl:16:00</td>
+      <td>Crystal Palace</td>
+      <td>Leicester</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>14/09/2024 Kl:18:30</td>
+      <td>Aston Villa</td>
+      <td>Everton</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>14/09/2024 Kl:21:00</td>
+      <td>Bournemouth</td>
+      <td>Chelsea</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>15/09/2024 Kl:15:00</td>
+      <td>Tottenham</td>
+      <td>Arsenal</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>15/09/2024 Kl:17:30</td>
+      <td>Wolves</td>
+      <td>Newcastle</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>21/09/2024 Kl:13:30</td>
+      <td>West Ham</td>
+      <td>Chelsea</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>21/09/2024 Kl:16:00</td>
+      <td>Fulham</td>
+      <td>Newcastle</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>21/09/2024 Kl:16:00</td>
+      <td>Liverpool</td>
+      <td>Bournemouth</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>21/09/2024 Kl:16:00</td>
+      <td>Southampton</td>
+      <td>Ipswich</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>21/09/2024 Kl:16:00</td>
+      <td>Leicester</td>
+      <td>Everton</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>21/09/2024 Kl:16:00</td>
+      <td>Tottenham</td>
+      <td>Brentford</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>21/09/2024 Kl:16:00</td>
+      <td>Aston Villa</td>
+      <td>Wolves</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>21/09/2024 Kl:18:30</td>
+      <td>Crystal Palace</td>
+      <td>Manchester United</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>22/09/2024 Kl:15:00</td>
+      <td>Brighton</td>
+      <td>Nottingham Forest</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>22/09/2024 Kl:17:30</td>
+      <td>Manchester City</td>
+      <td>Arsenal</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>28/09/2024 Kl:13:30</td>
+      <td>Newcastle</td>
+      <td>Manchester City</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>28/09/2024 Kl:16:00</td>
+      <td>Arsenal</td>
+      <td>Leicester</td>
+      <td>4</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>28/09/2024 Kl:16:00</td>
+      <td>Everton</td>
+      <td>Crystal Palace</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>28/09/2024 Kl:16:00</td>
+      <td>Chelsea</td>
+      <td>Brighton</td>
+      <td>4</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>28/09/2024 Kl:16:00</td>
+      <td>Brentford</td>
+      <td>West Ham</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>28/09/2024 Kl:16:00</td>
+      <td>Nottingham Forest</td>
+      <td>Fulham</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>28/09/2024 Kl:18:30</td>
+      <td>Wolves</td>
+      <td>Liverpool</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>29/09/2024 Kl:15:00</td>
+      <td>Ipswich</td>
+      <td>Aston Villa</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>29/09/2024 Kl:17:30</td>
+      <td>Manchester United</td>
+      <td>Tottenham</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>30/09/2024 Kl:21:00</td>
+      <td>Bournemouth</td>
+      <td>Southampton</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>05/10/2024 Kl:13:30</td>
+      <td>Crystal Palace</td>
+      <td>Liverpool</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>05/10/2024 Kl:16:00</td>
+      <td>Arsenal</td>
+      <td>Southampton</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>05/10/2024 Kl:16:00</td>
+      <td>Leicester</td>
+      <td>Bournemouth</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>05/10/2024 Kl:16:00</td>
+      <td>West Ham</td>
+      <td>Ipswich</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>05/10/2024 Kl:16:00</td>
+      <td>Manchester City</td>
+      <td>Fulham</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>05/10/2024 Kl:16:00</td>
+      <td>Brentford</td>
+      <td>Wolves</td>
+      <td>5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>05/10/2024 Kl:18:30</td>
+      <td>Everton</td>
+      <td>Newcastle</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/10/2024 Kl:15:00</td>
+      <td>Chelsea</td>
+      <td>Nottingham Forest</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>06/10/2024 Kl:15:00</td>
+      <td>Aston Villa</td>
+      <td>Manchester United</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/10/2024 Kl:17:30</td>
+      <td>Brighton</td>
+      <td>Tottenham</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>19/10/2024 Kl:13:30</td>
+      <td>Tottenham</td>
+      <td>West Ham</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>19/10/2024 Kl:16:00</td>
+      <td>Manchester United</td>
+      <td>Brentford</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>19/10/2024 Kl:16:00</td>
+      <td>Newcastle</td>
+      <td>Brighton</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>19/10/2024 Kl:16:00</td>
+      <td>Fulham</td>
+      <td>Aston Villa</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>19/10/2024 Kl:16:00</td>
+      <td>Southampton</td>
+      <td>Leicester</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>19/10/2024 Kl:16:00</td>
+      <td>Ipswich</td>
+      <td>Everton</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>19/10/2024 Kl:18:30</td>
+      <td>Bournemouth</td>
+      <td>Arsenal</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>20/10/2024 Kl:15:00</td>
+      <td>Wolves</td>
+      <td>Manchester City</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>20/10/2024 Kl:17:30</td>
+      <td>Liverpool</td>
+      <td>Chelsea</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>21/10/2024 Kl:21:00</td>
+      <td>Nottingham Forest</td>
+      <td>Crystal Palace</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25/10/2024 Kl:21:00</td>
+      <td>Leicester</td>
+      <td>Nottingham Forest</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>26/10/2024 Kl:16:00</td>
+      <td>Manchester City</td>
+      <td>Southampton</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26/10/2024 Kl:16:00</td>
+      <td>Brighton</td>
+      <td>Wolves</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>26/10/2024 Kl:16:00</td>
+      <td>Brentford</td>
+      <td>Ipswich</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>26/10/2024 Kl:16:00</td>
+      <td>Aston Villa</td>
+      <td>Bournemouth</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>26/10/2024 Kl:18:30</td>
+      <td>Everton</td>
+      <td>Fulham</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>27/10/2024 Kl:14:00</td>
+      <td>West Ham</td>
+      <td>Manchester United</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>27/10/2024 Kl:14:00</td>
+      <td>Chelsea</td>
+      <td>Newcastle</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>27/10/2024 Kl:14:00</td>
+      <td>Crystal Palace</td>
+      <td>Tottenham</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>27/10/2024 Kl:16:30</td>
+      <td>Arsenal</td>
+      <td>Liverpool</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>02/11/2024 Kl:13:30</td>
+      <td>Newcastle</td>
+      <td>Arsenal</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>02/11/2024 Kl:16:00</td>
+      <td>Bournemouth</td>
+      <td>Manchester City</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>02/11/2024 Kl:16:00</td>
+      <td>Liverpool</td>
+      <td>Brighton</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>02/11/2024 Kl:16:00</td>
+      <td>Southampton</td>
+      <td>Everton</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>02/11/2024 Kl:16:00</td>
+      <td>Ipswich</td>
+      <td>Leicester</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>02/11/2024 Kl:16:00</td>
+      <td>Nottingham Forest</td>
+      <td>West Ham</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>02/11/2024 Kl:18:30</td>
+      <td>Wolves</td>
+      <td>Crystal Palace</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>03/11/2024 Kl:15:00</td>
+      <td>Tottenham</td>
+      <td>Aston Villa</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>03/11/2024 Kl:17:30</td>
+      <td>Manchester United</td>
+      <td>Chelsea</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>04/11/2024 Kl:21:00</td>
+      <td>Fulham</td>
+      <td>Brentford</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>09/11/2024 Kl:16:00</td>
+      <td>Wolves</td>
+      <td>Southampton</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>09/11/2024 Kl:16:00</td>
+      <td>West Ham</td>
+      <td>Everton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>09/11/2024 Kl:16:00</td>
+      <td>Crystal Palace</td>
+      <td>Fulham</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>09/11/2024 Kl:16:00</td>
+      <td>Brentford</td>
+      <td>Bournemouth</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>09/11/2024 Kl:18:30</td>
+      <td>Brighton</td>
+      <td>Manchester City</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>09/11/2024 Kl:21:00</td>
+      <td>Liverpool</td>
+      <td>Aston Villa</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10/11/2024 Kl:15:00</td>
+      <td>Manchester United</td>
+      <td>Leicester</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10/11/2024 Kl:15:00</td>
+      <td>Tottenham</td>
+      <td>Ipswich</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>10/11/2024 Kl:15:00</td>
+      <td>Nottingham Forest</td>
+      <td>Newcastle</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>10/11/2024 Kl:17:30</td>
+      <td>Chelsea</td>
+      <td>Arsenal</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>23/11/2024 Kl:13:30</td>
+      <td>Leicester</td>
+      <td>Chelsea</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>23/11/2024 Kl:16:00</td>
+      <td>Bournemouth</td>
+      <td>Brighton</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>23/11/2024 Kl:16:00</td>
+      <td>Fulham</td>
+      <td>Wolves</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>23/11/2024 Kl:16:00</td>
+      <td>Arsenal</td>
+      <td>Nottingham Forest</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>23/11/2024 Kl:16:00</td>
+      <td>Everton</td>
+      <td>Brentford</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>23/11/2024 Kl:16:00</td>
+      <td>Aston Villa</td>
+      <td>Crystal Palace</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>23/11/2024 Kl:18:30</td>
+      <td>Manchester City</td>
+      <td>Tottenham</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>24/11/2024 Kl:15:00</td>
+      <td>Southampton</td>
+      <td>Liverpool</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>24/11/2024 Kl:17:30</td>
+      <td>Ipswich</td>
+      <td>Manchester United</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>25/11/2024 Kl:21:00</td>
+      <td>Newcastle</td>
+      <td>West Ham</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>29/11/2024 Kl:21:00</td>
+      <td>Brighton</td>
+      <td>Southampton</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>30/11/2024 Kl:16:00</td>
+      <td>Wolves</td>
+      <td>Bournemouth</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>30/11/2024 Kl:16:00</td>
+      <td>Crystal Palace</td>
+      <td>Newcastle</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>30/11/2024 Kl:16:00</td>
+      <td>Brentford</td>
+      <td>Leicester</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>30/11/2024 Kl:16:00</td>
+      <td>Nottingham Forest</td>
+      <td>Ipswich</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30/11/2024 Kl:18:30</td>
+      <td>West Ham</td>
+      <td>Arsenal</td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>01/12/2024 Kl:14:30</td>
+      <td>Manchester United</td>
+      <td>Everton</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>01/12/2024 Kl:14:30</td>
+      <td>Tottenham</td>
+      <td>Fulham</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/12/2024 Kl:14:30</td>
+      <td>Chelsea</td>
+      <td>Aston Villa</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>01/12/2024 Kl:17:00</td>
+      <td>Liverpool</td>
+      <td>Manchester City</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>03/12/2024 Kl:20:30</td>
+      <td>Ipswich</td>
+      <td>Crystal Palace</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>03/12/2024 Kl:21:15</td>
+      <td>Leicester</td>
+      <td>West Ham</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>04/12/2024 Kl:20:30</td>
+      <td>Newcastle</td>
+      <td>Liverpool</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>04/12/2024 Kl:20:30</td>
+      <td>Southampton</td>
+      <td>Chelsea</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>04/12/2024 Kl:20:30</td>
+      <td>Everton</td>
+      <td>Wolves</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>04/12/2024 Kl:20:30</td>
+      <td>Manchester City</td>
+      <td>Nottingham Forest</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>04/12/2024 Kl:21:15</td>
+      <td>Arsenal</td>
+      <td>Manchester United</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>04/12/2024 Kl:21:15</td>
+      <td>Aston Villa</td>
+      <td>Brentford</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>05/12/2024 Kl:20:30</td>
+      <td>Fulham</td>
+      <td>Brighton</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>05/12/2024 Kl:21:15</td>
+      <td>Bournemouth</td>
+      <td>Tottenham</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>07/12/2024 Kl:16:00</td>
+      <td>Crystal Palace</td>
+      <td>Manchester City</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>07/12/2024 Kl:16:00</td>
+      <td>Brentford</td>
+      <td>Newcastle</td>
+      <td>4</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>07/12/2024 Kl:16:00</td>
+      <td>Aston Villa</td>
+      <td>Southampton</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>07/12/2024 Kl:18:30</td>
+      <td>Manchester United</td>
+      <td>Nottingham Forest</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>08/12/2024 Kl:15:00</td>
+      <td>Fulham</td>
+      <td>Arsenal</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>08/12/2024 Kl:15:00</td>
+      <td>Leicester</td>
+      <td>Brighton</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>08/12/2024 Kl:15:00</td>
+      <td>Ipswich</td>
+      <td>Bournemouth</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>08/12/2024 Kl:17:30</td>
+      <td>Tottenham</td>
+      <td>Chelsea</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>09/12/2024 Kl:21:00</td>
+      <td>West Ham</td>
+      <td>Wolves</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>14/12/2024 Kl:16:00</td>
+      <td>Newcastle</td>
+      <td>Leicester</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14/12/2024 Kl:16:00</td>
+      <td>Wolves</td>
+      <td>Ipswich</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>14/12/2024 Kl:16:00</td>
+      <td>Liverpool</td>
+      <td>Fulham</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>14/12/2024 Kl:16:00</td>
+      <td>Arsenal</td>
+      <td>Everton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14/12/2024 Kl:18:30</td>
+      <td>Nottingham Forest</td>
+      <td>Aston Villa</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>15/12/2024 Kl:15:00</td>
+      <td>Brighton</td>
+      <td>Crystal Palace</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15/12/2024 Kl:17:30</td>
+      <td>Manchester City</td>
+      <td>Manchester United</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>15/12/2024 Kl:20:00</td>
+      <td>Southampton</td>
+      <td>Tottenham</td>
+      <td>0</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>15/12/2024 Kl:20:00</td>
+      <td>Chelsea</td>
+      <td>Brentford</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>16/12/2024 Kl:21:00</td>
+      <td>Bournemouth</td>
+      <td>West Ham</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>21/12/2024 Kl:13:30</td>
+      <td>Aston Villa</td>
+      <td>Manchester City</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>21/12/2024 Kl:16:00</td>
+      <td>West Ham</td>
+      <td>Brighton</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>21/12/2024 Kl:16:00</td>
+      <td>Brentford</td>
+      <td>Nottingham Forest</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>21/12/2024 Kl:16:00</td>
+      <td>Ipswich</td>
+      <td>Newcastle</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>21/12/2024 Kl:18:30</td>
+      <td>Crystal Palace</td>
+      <td>Arsenal</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>22/12/2024 Kl:15:00</td>
+      <td>Manchester United</td>
+      <td>Bournemouth</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>22/12/2024 Kl:15:00</td>
+      <td>Fulham</td>
+      <td>Southampton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>22/12/2024 Kl:15:00</td>
+      <td>Everton</td>
+      <td>Chelsea</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>22/12/2024 Kl:15:00</td>
+      <td>Leicester</td>
+      <td>Wolves</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>22/12/2024 Kl:17:30</td>
+      <td>Tottenham</td>
+      <td>Liverpool</td>
+      <td>3</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>26/12/2024 Kl:13:30</td>
+      <td>Manchester City</td>
+      <td>Everton</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>26/12/2024 Kl:16:00</td>
+      <td>Newcastle</td>
+      <td>Aston Villa</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26/12/2024 Kl:16:00</td>
+      <td>Bournemouth</td>
+      <td>Crystal Palace</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26/12/2024 Kl:16:00</td>
+      <td>Southampton</td>
+      <td>West Ham</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>26/12/2024 Kl:16:00</td>
+      <td>Chelsea</td>
+      <td>Fulham</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>26/12/2024 Kl:16:00</td>
+      <td>Nottingham Forest</td>
+      <td>Tottenham</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26/12/2024 Kl:18:30</td>
+      <td>Wolves</td>
+      <td>Manchester United</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26/12/2024 Kl:21:00</td>
+      <td>Liverpool</td>
+      <td>Leicester</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>27/12/2024 Kl:20:30</td>
+      <td>Brighton</td>
+      <td>Brentford</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>27/12/2024 Kl:21:15</td>
+      <td>Arsenal</td>
+      <td>Ipswich</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>29/12/2024 Kl:15:30</td>
+      <td>Leicester</td>
+      <td>Manchester City</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>29/12/2024 Kl:16:00</td>
+      <td>Fulham</td>
+      <td>Bournemouth</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>29/12/2024 Kl:16:00</td>
+      <td>Everton</td>
+      <td>Nottingham Forest</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>29/12/2024 Kl:16:00</td>
+      <td>Tottenham</td>
+      <td>Wolves</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>29/12/2024 Kl:16:00</td>
+      <td>Crystal Palace</td>
+      <td>Southampton</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>29/12/2024 Kl:18:15</td>
+      <td>West Ham</td>
+      <td>Liverpool</td>
+      <td>0</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>30/12/2024 Kl:20:45</td>
+      <td>Ipswich</td>
+      <td>Chelsea</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30/12/2024 Kl:20:45</td>
+      <td>Aston Villa</td>
+      <td>Brighton</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>30/12/2024 Kl:21:00</td>
+      <td>Manchester United</td>
+      <td>Newcastle</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>01/01/2025 Kl:18:30</td>
+      <td>Brentford</td>
+      <td>Arsenal</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>04/01/2025 Kl:13:30</td>
+      <td>Tottenham</td>
+      <td>Newcastle</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>04/01/2025 Kl:16:00</td>
+      <td>Bournemouth</td>
+      <td>Everton</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>04/01/2025 Kl:16:00</td>
+      <td>Southampton</td>
+      <td>Brentford</td>
+      <td>0</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>04/01/2025 Kl:16:00</td>
+      <td>Manchester City</td>
+      <td>West Ham</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>04/01/2025 Kl:16:00</td>
+      <td>Crystal Palace</td>
+      <td>Chelsea</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>04/01/2025 Kl:16:00</td>
+      <td>Aston Villa</td>
+      <td>Leicester</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>04/01/2025 Kl:18:30</td>
+      <td>Brighton</td>
+      <td>Arsenal</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>05/01/2025 Kl:15:00</td>
+      <td>Fulham</td>
+      <td>Ipswich</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>05/01/2025 Kl:17:30</td>
+      <td>Liverpool</td>
+      <td>Manchester United</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>06/01/2025 Kl:21:00</td>
+      <td>Wolves</td>
+      <td>Nottingham Forest</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>14/01/2025 Kl:20:30</td>
+      <td>West Ham</td>
+      <td>Fulham</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>14/01/2025 Kl:20:30</td>
+      <td>Chelsea</td>
+      <td>Bournemouth</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>14/01/2025 Kl:20:30</td>
+      <td>Brentford</td>
+      <td>Manchester City</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>14/01/2025 Kl:21:00</td>
+      <td>Nottingham Forest</td>
+      <td>Liverpool</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>15/01/2025 Kl:20:30</td>
+      <td>Newcastle</td>
+      <td>Wolves</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>15/01/2025 Kl:20:30</td>
+      <td>Everton</td>
+      <td>Aston Villa</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>15/01/2025 Kl:20:30</td>
+      <td>Leicester</td>
+      <td>Crystal Palace</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>15/01/2025 Kl:21:00</td>
+      <td>Arsenal</td>
+      <td>Tottenham</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>16/01/2025 Kl:20:30</td>
+      <td>Ipswich</td>
+      <td>Brighton</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>16/01/2025 Kl:21:00</td>
+      <td>Manchester United</td>
+      <td>Southampton</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>18/01/2025 Kl:13:30</td>
+      <td>Newcastle</td>
+      <td>Bournemouth</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>18/01/2025 Kl:16:00</td>
+      <td>Leicester</td>
+      <td>Fulham</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>18/01/2025 Kl:16:00</td>
+      <td>West Ham</td>
+      <td>Crystal Palace</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>18/01/2025 Kl:16:00</td>
+      <td>Brentford</td>
+      <td>Liverpool</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>18/01/2025 Kl:18:30</td>
+      <td>Arsenal</td>
+      <td>Aston Villa</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>19/01/2025 Kl:15:00</td>
+      <td>Manchester United</td>
+      <td>Brighton</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>19/01/2025 Kl:15:00</td>
+      <td>Everton</td>
+      <td>Tottenham</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>19/01/2025 Kl:15:00</td>
+      <td>Nottingham Forest</td>
+      <td>Southampton</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>19/01/2025 Kl:17:30</td>
+      <td>Ipswich</td>
+      <td>Manchester City</td>
+      <td>0</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>20/01/2025 Kl:21:00</td>
+      <td>Chelsea</td>
+      <td>Wolves</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>25/01/2025 Kl:16:00</td>
+      <td>Bournemouth</td>
+      <td>Nottingham Forest</td>
+      <td>5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25/01/2025 Kl:16:00</td>
+      <td>Wolves</td>
+      <td>Arsenal</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>25/01/2025 Kl:16:00</td>
+      <td>Liverpool</td>
+      <td>Ipswich</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>25/01/2025 Kl:16:00</td>
+      <td>Southampton</td>
+      <td>Newcastle</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>25/01/2025 Kl:16:00</td>
+      <td>Brighton</td>
+      <td>Everton</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>25/01/2025 Kl:18:30</td>
+      <td>Manchester City</td>
+      <td>Chelsea</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>26/01/2025 Kl:15:00</td>
+      <td>Tottenham</td>
+      <td>Leicester</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>26/01/2025 Kl:15:00</td>
+      <td>Crystal Palace</td>
+      <td>Brentford</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>26/01/2025 Kl:17:30</td>
+      <td>Aston Villa</td>
+      <td>West Ham</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>26/01/2025 Kl:20:00</td>
+      <td>Fulham</td>
+      <td>Manchester United</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/2025 Kl:13:30</td>
+      <td>Nottingham Forest</td>
+      <td>Brighton</td>
+      <td>7</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>01/02/2025 Kl:16:00</td>
+      <td>Newcastle</td>
+      <td>Fulham</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>01/02/2025 Kl:16:00</td>
+      <td>Bournemouth</td>
+      <td>Liverpool</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>01/02/2025 Kl:16:00</td>
+      <td>Everton</td>
+      <td>Leicester</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>01/02/2025 Kl:16:00</td>
+      <td>Ipswich</td>
+      <td>Southampton</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>01/02/2025 Kl:18:30</td>
+      <td>Wolves</td>
+      <td>Aston Villa</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>02/02/2025 Kl:15:00</td>
+      <td>Manchester United</td>
+      <td>Crystal Palace</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>02/02/2025 Kl:15:00</td>
+      <td>Brentford</td>
+      <td>Tottenham</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>02/02/2025 Kl:17:30</td>
+      <td>Arsenal</td>
+      <td>Manchester City</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>03/02/2025 Kl:21:00</td>
+      <td>Chelsea</td>
+      <td>West Ham</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>12/02/2025 Kl:20:30</td>
+      <td>Everton</td>
+      <td>Liverpool</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>14/02/2025 Kl:21:00</td>
+      <td>Brighton</td>
+      <td>Chelsea</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>15/02/2025 Kl:13:30</td>
+      <td>Leicester</td>
+      <td>Arsenal</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>15/02/2025 Kl:16:00</td>
+      <td>Fulham</td>
+      <td>Nottingham Forest</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>15/02/2025 Kl:16:00</td>
+      <td>Southampton</td>
+      <td>Bournemouth</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15/02/2025 Kl:16:00</td>
+      <td>West Ham</td>
+      <td>Brentford</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>15/02/2025 Kl:16:00</td>
+      <td>Manchester City</td>
+      <td>Newcastle</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>15/02/2025 Kl:16:00</td>
+      <td>Aston Villa</td>
+      <td>Ipswich</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>15/02/2025 Kl:18:30</td>
+      <td>Crystal Palace</td>
+      <td>Everton</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>16/02/2025 Kl:15:00</td>
+      <td>Liverpool</td>
+      <td>Wolves</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>16/02/2025 Kl:17:30</td>
+      <td>Tottenham</td>
+      <td>Manchester United</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>19/02/2025 Kl:20:30</td>
+      <td>Aston Villa</td>
+      <td>Liverpool</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>21/02/2025 Kl:21:00</td>
+      <td>Leicester</td>
+      <td>Brentford</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>22/02/2025 Kl:13:30</td>
+      <td>Everton</td>
+      <td>Manchester United</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>22/02/2025 Kl:16:00</td>
+      <td>Bournemouth</td>
+      <td>Wolves</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>22/02/2025 Kl:16:00</td>
+      <td>Fulham</td>
+      <td>Crystal Palace</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>22/02/2025 Kl:16:00</td>
+      <td>Southampton</td>
+      <td>Brighton</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>22/02/2025 Kl:16:00</td>
+      <td>Arsenal</td>
+      <td>West Ham</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>22/02/2025 Kl:16:00</td>
+      <td>Ipswich</td>
+      <td>Tottenham</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>22/02/2025 Kl:18:30</td>
+      <td>Aston Villa</td>
+      <td>Chelsea</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>23/02/2025 Kl:15:00</td>
+      <td>Newcastle</td>
+      <td>Nottingham Forest</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>23/02/2025 Kl:17:30</td>
+      <td>Manchester City</td>
+      <td>Liverpool</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>25/02/2025 Kl:20:30</td>
+      <td>Wolves</td>
+      <td>Fulham</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>25/02/2025 Kl:20:30</td>
+      <td>Brighton</td>
+      <td>Bournemouth</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>25/02/2025 Kl:20:30</td>
+      <td>Crystal Palace</td>
+      <td>Aston Villa</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>25/02/2025 Kl:21:15</td>
+      <td>Chelsea</td>
+      <td>Southampton</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26/02/2025 Kl:20:30</td>
+      <td>Manchester United</td>
+      <td>Ipswich</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>26/02/2025 Kl:20:30</td>
+      <td>Tottenham</td>
+      <td>Manchester City</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>26/02/2025 Kl:20:30</td>
+      <td>Brentford</td>
+      <td>Everton</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>26/02/2025 Kl:20:30</td>
+      <td>Nottingham Forest</td>
+      <td>Arsenal</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26/02/2025 Kl:21:15</td>
+      <td>Liverpool</td>
+      <td>Newcastle</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>27/02/2025 Kl:21:00</td>
+      <td>West Ham</td>
+      <td>Leicester</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>08/03/2025 Kl:13:30</td>
+      <td>Nottingham Forest</td>
+      <td>Manchester City</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>08/03/2025 Kl:16:00</td>
+      <td>Liverpool</td>
+      <td>Southampton</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>08/03/2025 Kl:16:00</td>
+      <td>Brighton</td>
+      <td>Fulham</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>08/03/2025 Kl:16:00</td>
+      <td>Crystal Palace</td>
+      <td>Ipswich</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>08/03/2025 Kl:18:30</td>
+      <td>Brentford</td>
+      <td>Aston Villa</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>08/03/2025 Kl:21:00</td>
+      <td>Wolves</td>
+      <td>Everton</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>09/03/2025 Kl:15:00</td>
+      <td>Tottenham</td>
+      <td>Bournemouth</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>09/03/2025 Kl:15:00</td>
+      <td>Chelsea</td>
+      <td>Leicester</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>09/03/2025 Kl:17:30</td>
+      <td>Manchester United</td>
+      <td>Arsenal</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>10/03/2025 Kl:21:00</td>
+      <td>West Ham</td>
+      <td>Newcastle</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>15/03/2025 Kl:16:00</td>
+      <td>Southampton</td>
+      <td>Wolves</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>15/03/2025 Kl:16:00</td>
+      <td>Everton</td>
+      <td>West Ham</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>15/03/2025 Kl:16:00</td>
+      <td>Manchester City</td>
+      <td>Brighton</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>15/03/2025 Kl:16:00</td>
+      <td>Ipswich</td>
+      <td>Nottingham Forest</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>15/03/2025 Kl:18:30</td>
+      <td>Bournemouth</td>
+      <td>Brentford</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>16/03/2025 Kl:14:30</td>
+      <td>Fulham</td>
+      <td>Tottenham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>16/03/2025 Kl:14:30</td>
+      <td>Arsenal</td>
+      <td>Chelsea</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>16/03/2025 Kl:20:00</td>
+      <td>Leicester</td>
+      <td>Manchester United</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>01/04/2025 Kl:20:45</td>
+      <td>Wolves</td>
+      <td>West Ham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>01/04/2025 Kl:20:45</td>
+      <td>Arsenal</td>
+      <td>Fulham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>01/04/2025 Kl:21:00</td>
+      <td>Nottingham Forest</td>
+      <td>Manchester United</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>02/04/2025 Kl:20:45</td>
+      <td>Newcastle</td>
+      <td>Brentford</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>02/04/2025 Kl:20:45</td>
+      <td>Bournemouth</td>
+      <td>Ipswich</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>02/04/2025 Kl:20:45</td>
+      <td>Southampton</td>
+      <td>Crystal Palace</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>02/04/2025 Kl:20:45</td>
+      <td>Manchester City</td>
+      <td>Leicester</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>02/04/2025 Kl:20:45</td>
+      <td>Brighton</td>
+      <td>Aston Villa</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>02/04/2025 Kl:21:00</td>
+      <td>Liverpool</td>
+      <td>Everton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>03/04/2025 Kl:21:00</td>
+      <td>Chelsea</td>
+      <td>Tottenham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>05/04/2025 Kl:13:30</td>
+      <td>Everton</td>
+      <td>Arsenal</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>05/04/2025 Kl:16:00</td>
+      <td>West Ham</td>
+      <td>Bournemouth</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>05/04/2025 Kl:16:00</td>
+      <td>Crystal Palace</td>
+      <td>Brighton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>05/04/2025 Kl:16:00</td>
+      <td>Ipswich</td>
+      <td>Wolves</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>05/04/2025 Kl:18:30</td>
+      <td>Aston Villa</td>
+      <td>Nottingham Forest</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/04/2025 Kl:15:00</td>
+      <td>Fulham</td>
+      <td>Liverpool</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/04/2025 Kl:15:00</td>
+      <td>Tottenham</td>
+      <td>Southampton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/04/2025 Kl:15:00</td>
+      <td>Brentford</td>
+      <td>Chelsea</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/04/2025 Kl:17:30</td>
+      <td>Manchester United</td>
+      <td>Manchester City</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>07/04/2025 Kl:21:00</td>
+      <td>Leicester</td>
+      <td>Newcastle</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>12/04/2025 Kl:13:30</td>
+      <td>Manchester City</td>
+      <td>Crystal Palace</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>12/04/2025 Kl:16:00</td>
+      <td>Southampton</td>
+      <td>Aston Villa</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>12/04/2025 Kl:16:00</td>
+      <td>Brighton</td>
+      <td>Leicester</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>12/04/2025 Kl:16:00</td>
+      <td>Nottingham Forest</td>
+      <td>Everton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>12/04/2025 Kl:18:30</td>
+      <td>Arsenal</td>
+      <td>Brentford</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>13/04/2025 Kl:15:00</td>
+      <td>Wolves</td>
+      <td>Tottenham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>13/04/2025 Kl:15:00</td>
+      <td>Liverpool</td>
+      <td>West Ham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>13/04/2025 Kl:15:00</td>
+      <td>Chelsea</td>
+      <td>Ipswich</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>13/04/2025 Kl:17:30</td>
+      <td>Newcastle</td>
+      <td>Manchester United</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14/04/2025 Kl:21:00</td>
+      <td>Bournemouth</td>
+      <td>Fulham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>16/04/2025 Kl:20:30</td>
+      <td>Newcastle</td>
+      <td>Crystal Palace</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>19/04/2025 Kl:16:00</td>
+      <td>Everton</td>
+      <td>Manchester City</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>19/04/2025 Kl:16:00</td>
+      <td>West Ham</td>
+      <td>Southampton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>19/04/2025 Kl:16:00</td>
+      <td>Crystal Palace</td>
+      <td>Bournemouth</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>19/04/2025 Kl:16:00</td>
+      <td>Brentford</td>
+      <td>Brighton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>19/04/2025 Kl:18:30</td>
+      <td>Aston Villa</td>
+      <td>Newcastle</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>20/04/2025 Kl:15:00</td>
+      <td>Manchester United</td>
+      <td>Wolves</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>20/04/2025 Kl:15:00</td>
+      <td>Fulham</td>
+      <td>Chelsea</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>20/04/2025 Kl:15:00</td>
+      <td>Ipswich</td>
+      <td>Arsenal</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>20/04/2025 Kl:17:30</td>
+      <td>Leicester</td>
+      <td>Liverpool</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>21/04/2025 Kl:21:00</td>
+      <td>Tottenham</td>
+      <td>Nottingham Forest</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26/04/2025 Kl:13:30</td>
+      <td>Chelsea</td>
+      <td>Everton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26/04/2025 Kl:16:00</td>
+      <td>Newcastle</td>
+      <td>Ipswich</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26/04/2025 Kl:16:00</td>
+      <td>Wolves</td>
+      <td>Leicester</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26/04/2025 Kl:16:00</td>
+      <td>Southampton</td>
+      <td>Fulham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26/04/2025 Kl:16:00</td>
+      <td>Brighton</td>
+      <td>West Ham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26/04/2025 Kl:16:00</td>
+      <td>Nottingham Forest</td>
+      <td>Brentford</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>26/04/2025 Kl:18:30</td>
+      <td>Arsenal</td>
+      <td>Crystal Palace</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>27/04/2025 Kl:15:00</td>
+      <td>Bournemouth</td>
+      <td>Manchester United</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>27/04/2025 Kl:17:30</td>
+      <td>Liverpool</td>
+      <td>Tottenham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>28/04/2025 Kl:21:00</td>
+      <td>Manchester City</td>
+      <td>Aston Villa</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>03/05/2025 Kl:16:00</td>
+      <td>Arsenal</td>
+      <td>Bournemouth</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>03/05/2025 Kl:16:00</td>
+      <td>Everton</td>
+      <td>Ipswich</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>03/05/2025 Kl:16:00</td>
+      <td>Leicester</td>
+      <td>Southampton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>03/05/2025 Kl:16:00</td>
+      <td>West Ham</td>
+      <td>Tottenham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>03/05/2025 Kl:16:00</td>
+      <td>Chelsea</td>
+      <td>Liverpool</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>03/05/2025 Kl:16:00</td>
+      <td>Manchester City</td>
+      <td>Wolves</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>03/05/2025 Kl:16:00</td>
+      <td>Brighton</td>
+      <td>Newcastle</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>03/05/2025 Kl:16:00</td>
+      <td>Crystal Palace</td>
+      <td>Nottingham Forest</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>03/05/2025 Kl:16:00</td>
+      <td>Brentford</td>
+      <td>Manchester United</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>03/05/2025 Kl:16:00</td>
+      <td>Aston Villa</td>
+      <td>Fulham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10/05/2025 Kl:16:00</td>
+      <td>Manchester United</td>
+      <td>West Ham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10/05/2025 Kl:16:00</td>
+      <td>Newcastle</td>
+      <td>Chelsea</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10/05/2025 Kl:16:00</td>
+      <td>Bournemouth</td>
+      <td>Aston Villa</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10/05/2025 Kl:16:00</td>
+      <td>Fulham</td>
+      <td>Everton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10/05/2025 Kl:16:00</td>
+      <td>Wolves</td>
+      <td>Brighton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10/05/2025 Kl:16:00</td>
+      <td>Liverpool</td>
+      <td>Arsenal</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10/05/2025 Kl:16:00</td>
+      <td>Southampton</td>
+      <td>Manchester City</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10/05/2025 Kl:16:00</td>
+      <td>Tottenham</td>
+      <td>Crystal Palace</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10/05/2025 Kl:16:00</td>
+      <td>Ipswich</td>
+      <td>Brentford</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10/05/2025 Kl:16:00</td>
+      <td>Nottingham Forest</td>
+      <td>Leicester</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>18/05/2025 Kl:16:00</td>
+      <td>Arsenal</td>
+      <td>Newcastle</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>18/05/2025 Kl:16:00</td>
+      <td>Everton</td>
+      <td>Southampton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>18/05/2025 Kl:16:00</td>
+      <td>Leicester</td>
+      <td>Ipswich</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>18/05/2025 Kl:16:00</td>
+      <td>West Ham</td>
+      <td>Nottingham Forest</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>18/05/2025 Kl:16:00</td>
+      <td>Chelsea</td>
+      <td>Manchester United</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>18/05/2025 Kl:16:00</td>
+      <td>Manchester City</td>
+      <td>Bournemouth</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>18/05/2025 Kl:16:00</td>
+      <td>Brighton</td>
+      <td>Liverpool</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>18/05/2025 Kl:16:00</td>
+      <td>Crystal Palace</td>
+      <td>Wolves</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>18/05/2025 Kl:16:00</td>
+      <td>Brentford</td>
+      <td>Fulham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>18/05/2025 Kl:16:00</td>
+      <td>Aston Villa</td>
+      <td>Tottenham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25/05/2025 Kl:17:00</td>
+      <td>Manchester United</td>
+      <td>Aston Villa</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25/05/2025 Kl:17:00</td>
+      <td>Newcastle</td>
+      <td>Everton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25/05/2025 Kl:17:00</td>
+      <td>Bournemouth</td>
+      <td>Leicester</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25/05/2025 Kl:17:00</td>
+      <td>Fulham</td>
+      <td>Manchester City</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25/05/2025 Kl:17:00</td>
+      <td>Wolves</td>
+      <td>Brentford</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25/05/2025 Kl:17:00</td>
+      <td>Liverpool</td>
+      <td>Crystal Palace</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25/05/2025 Kl:17:00</td>
+      <td>Southampton</td>
+      <td>Arsenal</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25/05/2025 Kl:17:00</td>
+      <td>Tottenham</td>
+      <td>Brighton</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25/05/2025 Kl:17:00</td>
+      <td>Ipswich</td>
+      <td>West Ham</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25/05/2025 Kl:17:00</td>
+      <td>Nottingham Forest</td>
+      <td>Chelsea</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
