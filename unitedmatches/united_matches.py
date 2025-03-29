@@ -64,7 +64,7 @@ def match_result():
                 result.append(determine_result(homescore, awayscore, home_id, united_id))
         remove_column_name = ''
 
-        clm = ['Match date', 'Home', 'Away', 'h_score', 'a_score', remove_column_name]
+        clm = ['Match date', 'Home', 'Away', 'mål', 'mål', remove_column_name]
         h_score = [int(score) if score is not None else 0 for score in home_score]
         a_score = [int(score) if score is not None else 0 for score in away_score]
 
