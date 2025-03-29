@@ -5,7 +5,7 @@ from jinja2 import Environment, FileSystemLoader
 
 
 def match_time_stamp(timestamp):
-    match_tid = datetime.fromtimestamp(timestamp).strftime("%d/%m/%Y")
+    match_tid = datetime.fromtimestamp(timestamp)
     return match_tid
 
 
@@ -33,6 +33,10 @@ def format_result_cell(result):
         return f'<td class="tap"></td>'
     else:
         return f'<td></td>'
+
+
+def format_date_cell(date):
+    return date.strftime("%d/%m/%Y")
 
 
 def match_result():
@@ -69,11 +73,11 @@ def match_result():
         a_score = [int(score) if score is not None else 0 for score in away_score]
 
         df = pd.DataFrame(list(zip(match_time, home_team, away_team, h_score, a_score, result)), columns=clm)
-        df['Match date'] = pd.to_datetime(df['Match date'], format="%d/%m/%Y")
+        # df['Match date'] = pd.to_datetime(df['Match date'], format="%d/%m/%Y", dayfirst=True)
         df = df.sort_values(by='Match date', ascending=False)
         print(df)
         html_table = df.to_html(index=False, escape=False, classes='dataframe',
-                                formatters={remove_column_name: format_result_cell})
+                                formatters={remove_column_name: format_result_cell, 'Match date': format_date_cell})
         env = Environment(loader=FileSystemLoader('..'))
         template = env.get_template(r'unitedmatches/template.html')
         output = template.render(table=html_table)
