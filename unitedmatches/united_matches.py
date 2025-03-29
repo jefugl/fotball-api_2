@@ -5,7 +5,7 @@ from jinja2 import Environment, FileSystemLoader
 
 
 def match_time_stamp(timestamp):
-    match_tid = datetime.fromtimestamp(timestamp).strftime("%d/%m/%Y Kl:%H:%M")
+    match_tid = datetime.fromtimestamp(timestamp).strftime("%d/%m/%Y")
     return match_tid
 
 
@@ -48,7 +48,7 @@ def match_result():
         data = json.loads(file)
         pl_league = data['response']
         for i in range(len(pl_league)):
-            mtime = pl_league[i]['fixture']['timestamp']
+            matchtime = pl_league[i]['fixture']['timestamp']
             home_id = pl_league[i]['teams']['home']['id']
             away_id = pl_league[i]['teams']['away']['id']
             homescore = pl_league[i]['goals']['home']
@@ -60,7 +60,7 @@ def match_result():
                 away_team.append(pl_league[i]['teams']['away']['name'])
                 home_score.append(pl_league[i]['goals']['home'])
                 away_score.append(pl_league[i]['goals']['away'])
-                match_time.append(match_time_stamp(mtime))
+                match_time.append(match_time_stamp(matchtime))
                 result.append(determine_result(homescore, awayscore, home_id, united_id))
         remove_column_name = ''
 
