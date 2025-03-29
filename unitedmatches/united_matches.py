@@ -9,7 +9,40 @@ def match_time_stamp(timestamp):
     return match_tid
 
 
+def determine_result(homescore, awayscore, home_id, united_id):
+    if homescore > awayscore:
+        if home_id == united_id:
+            return 'Seier'
+        else:
+            return 'Tap'
+    elif homescore < awayscore:
+        if home_id == united_id:
+            return 'Tap'
+        else:
+            return 'Seier'
+    else:
+        return 'Uavgjort'
+
+
+def format_result_cell(result):
+    if result == 'Seier':
+        return f'<td class="seier"></td>'
+    elif result == 'Uavgjort':
+        return f'<td class="uavgjort"></td>'
+    elif result == 'Tap':
+        return f'<td class="tap"></td>'
+    else:
+        return f'<td>{result}</td>'
+
+
 def match_result():
+    match_time = []
+    home_team = []
+    away_team = []
+    home_score = []
+    away_score = []
+    result = []
+
     with (open('../matches/match.json') as f):
         file = f.read()
         data = json.loads(file)
@@ -28,16 +61,15 @@ def match_result():
                 home_score.append(pl_league[i]['goals']['home'])
                 away_score.append(pl_league[i]['goals']['away'])
                 match_time.append(match_time_stamp(mtime))
+                result.append(determine_result(homescore, awayscore, home_id, united_id))
 
-        clm = ['Match date', 'Home', 'Away', 'h_score', 'a_score']
+        clm = ['Match date', 'Home', 'Away', 'h_score', 'a_score', 'Result']
         h_score = [int(score) if score is not None else 0 for score in home_score]
         a_score = [int(score) if score is not None else 0 for score in away_score]
 
-        df = pd.DataFrame(list(zip(match_time, home_team, away_team, h_score, a_score)),
-                          columns=clm)
+        df = pd.DataFrame(list(zip(match_time, home_team, away_team, h_score, a_score, result)), columns=clm)
         print(df)
-        print(match_time)
-        html_table = df.to_html(index=False, escape=False)
+        html_table = df.to_html(index=False, escape=False, classes='dataframe', formatters={'Result': format_result_cell})
         env = Environment(loader=FileSystemLoader('..'))
         template = env.get_template(r'unitedmatches/template.html')
         output = template.render(table=html_table)
@@ -45,14 +77,7 @@ def match_result():
             file.write(output)
 
 
-match_time = []
-home_team = []
-away_team = []
-home_score = []
-away_score = []
-
 united_id = 33
-
 
 if __name__ == '__main__':
     match_result()
