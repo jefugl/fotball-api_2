@@ -32,7 +32,7 @@ def format_result_cell(result):
     elif result == 'Tap':
         return f'<td class="tap"></td>'
     else:
-        return f'<td>{result}</td>'
+        return f'<td></td>'
 
 
 def match_result():
@@ -62,14 +62,16 @@ def match_result():
                 away_score.append(pl_league[i]['goals']['away'])
                 match_time.append(match_time_stamp(mtime))
                 result.append(determine_result(homescore, awayscore, home_id, united_id))
+        remove_column_name = ''
 
-        clm = ['Match date', 'Home', 'Away', 'h_score', 'a_score', 'Result']
+        clm = ['Match date', 'Home', 'Away', 'h_score', 'a_score', remove_column_name]
         h_score = [int(score) if score is not None else 0 for score in home_score]
         a_score = [int(score) if score is not None else 0 for score in away_score]
 
         df = pd.DataFrame(list(zip(match_time, home_team, away_team, h_score, a_score, result)), columns=clm)
         print(df)
-        html_table = df.to_html(index=False, escape=False, classes='dataframe', formatters={'Result': format_result_cell})
+        html_table = df.to_html(index=False, escape=False, classes='dataframe',
+                                formatters={remove_column_name: format_result_cell})
         env = Environment(loader=FileSystemLoader('..'))
         template = env.get_template(r'unitedmatches/template.html')
         output = template.render(table=html_table)
