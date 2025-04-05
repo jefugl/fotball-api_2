@@ -28,6 +28,7 @@ def table():
         table_date = dato()
         print(table_date)
         for i in pl_table:
+            # sd
             table_pos = i['rank']
             team = i['team']['name']
             points = i['points']
