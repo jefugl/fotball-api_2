@@ -16,7 +16,7 @@ team_logo = []
 
 def dato():
     now = datetime.now()
-    dagens = now.strftime("%A, %d %B %Y, uke %W")
+    dagens = now.strftime("%A, %d %B %Y, uke %V")
     return dagens
 
 
